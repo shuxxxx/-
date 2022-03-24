@@ -69,10 +69,15 @@ $$ t = \frac{\overline{x_1}-\overline{x_2}}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}
 其中
 $$ s_p = \sqrt{\frac{(n_1-1)*s_1^2+(n_2-1)*s_2^2}{n_1+n_2-2}} $$
 各参数含义如下：
+
 $\overline{x_1}、\overline{x_2}：分别表示两个样本的均值$
+
 $s_1、s_2：分别表示两个样本的标准差$
+
 $n_1、n_2：分别表示两个样本的样本个数$
+
 $s_p：合并标准差$
+
 得到 t 值后，查表可得对应 P_value（参考：[知乎链接](https://www.zhihu.com/question/359497751/answer/924458823)）
 
 ### 配对样本 T 检验
