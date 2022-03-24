@@ -65,9 +65,14 @@ $$z = \frac{\overline{xa1}-\overline{xb1}}{\sqrt{\frac{Sa}{ma1}+\frac{Sb}{mb1}}}
 
 ### 独立样本 T 检验
 针对上述例子中的数据，我们有实验组和对照组 6 日的 CTR 数据，则可以计算出各自组内CTR 数据的均值和标准差，然后套用如下公式（注意这里要求实验组和对照组数据样本服从正态分布）：
-$$ t = \frac{\overline{x_1}-\overline{x_2}}{s_p*\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}  $$
+$$ t = \frac{\overline{x_1}-\overline{x_2}}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}  $$
 其中
 $$ s_p = \sqrt{\frac{(n_1-1)*s_1^2+(n_2-1)*s_2^2}{n_1+n_2-2}} $$
+各参数含义如下：
+$\overline{x_1}、\overline{x_2}：分别表示两个样本的均值$
+$s_1、s_2：分别表示两个样本的标准差$
+$n_1、n_2：分别表示两个样本的样本个数$
+$s_p：合并标准差$
 得到 t 值后，查表可得对应 P_value（参考：[知乎链接](https://www.zhihu.com/question/359497751/answer/924458823)）
 
 ### 配对样本 T 检验
